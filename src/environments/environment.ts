@@ -8,9 +8,7 @@ export const environment = {
   dashboardURL: "http://localhost:8081",
   DepartmentUrl:"https://departmentservice.dev.skillassure.com/department",
   VetUrl:"https://vetservice.dev.skillassure.com/vet",
-<<<<<<< HEAD
-  petUrl:"http://petservice.dev.skillassure.com/pet",
-=======
+  //petUrl:"http://petservice.dev.skillassure.com/pet",
   petUrl:"https://petservice.dev.skillassure.com/pet/pet",
 >>>>>>> 89d50b396211a946966522aba5654fecb6cd9236
    firebase : {
