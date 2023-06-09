@@ -10,7 +10,6 @@ export const environment = {
   VetUrl:"https://vetservice.dev.skillassure.com/vet",
   //petUrl:"http://petservice.dev.skillassure.com/pet",
   petUrl:"https://petservice.dev.skillassure.com/pet/pet",
->>>>>>> 89d50b396211a946966522aba5654fecb6cd9236
    firebase : {
     apiKey: "AIzaSyCI3zOChykFvesUAKiV5hBWfDDU795iVYM",
     authDomain: "authentication-service-9c9b6.firebaseapp.com",
