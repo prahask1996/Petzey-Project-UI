@@ -1,8 +1,10 @@
 #k8's yaml
-apiVersion : apps/v1
-kind: Deploymant
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: petzey-ui
+    labels:
+        app: petzey-ui
+    name: petzey-ui
 spec:
   replicas: 1
   selector:
@@ -15,7 +17,7 @@ spec:
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
-      Containers:
+      containers:
       - name: petzey-ui
         image: email14.azurecr.io/prahaskpetzeyprojectui:25
         env:
