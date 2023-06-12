@@ -17,7 +17,10 @@ spec:
         "kubernetes.io/os": linux
       Containers:
       - name: petzey-ui
-        image:
+        image: email14.azurecr.io/prahaskpetzeyprojectui:25
+        env:
+        - name: ALLOW_EMPTY_PASSWORD
+          value: "yes"
         resources:
         request:
           cup: 100m
