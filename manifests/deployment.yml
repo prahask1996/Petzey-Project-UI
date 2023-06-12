@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: prahaskpetzeyprojectui 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prahaskpetzeyprojectui
+  template:
+    metadata:
+      labels:
+        app: prahaskpetzeyprojectui 
+    spec:
+      containers:
+        - name: prahaskpetzeyprojectui 
+          image: email14.azurecr.io/prahaskpetzeyprojectui
+          ports:
+          - containerPort: 80
