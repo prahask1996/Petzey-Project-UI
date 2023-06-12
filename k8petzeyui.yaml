@@ -1,1 +1,43 @@
 #k8's yaml
+apiVersion : apps/v1
+kind: Deploymant
+metadata:
+  name: petzey-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petzey-ui
+  template:
+    metadata:
+      labels:
+        app: petzey-ui
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      Containers:
+      - name: petzey-ui
+        image:
+        resources:
+        request:
+          cup: 100m
+          memory: 128Mi
+        limits:
+          cpu: 250m
+          memory:  256Mi
+        ports:
+        - containerPort: 
+        env:
+        - name :
+          Value: ""
+---
+apiVersion: v1
+kind: service
+metadata:
+  name: petzey-ui
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: petzey-ui
