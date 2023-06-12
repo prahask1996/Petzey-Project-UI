@@ -35,7 +35,7 @@ spec:
         #  Value: ""
 ---
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
   name: petzey-ui
 spec:
