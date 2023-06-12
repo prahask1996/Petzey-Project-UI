@@ -29,10 +29,10 @@ spec:
           cpu: 250m
           memory:  256Mi
         ports:
-        - containerPort: 
-        env:
-        - name :
-          Value: ""
+        - containerPort: 80
+        #env:
+        #- name :
+        #  Value: ""
 ---
 apiVersion: v1
 kind: service
