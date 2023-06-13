@@ -19,7 +19,8 @@ export const environment = {
     appId: "1:57151664865:web:9e38670668125cd8d07da0",
     measurementId: "G-QSKG3ES558"
   },
-   baseUrl : "https://appointmentservice.dev.skillassure.com/appointment/appointments",
+   // baseUrl : "https://appointmentservice.dev.skillassure.com/appointment/appointments",
+   baseUrk : "http://20.204.217.160:8091/appointment/appointments",
    vetUrl :"http://bt-vet.learn.skillassure.com/vet/vet/viewByVetName",
    clinicUrl : "https://clinicservice.dev.skillassure.com/clinic/clinics/clinic/get/name",
    fetchAllClinics : "https://clinicservice.dev.skillassure.com/clinic/clinics/clinic/get/all",
