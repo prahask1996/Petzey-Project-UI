@@ -20,7 +20,7 @@ export const environment = {
     measurementId: "G-QSKG3ES558"
   },
    // baseUrl : "https://appointmentservice.dev.skillassure.com/appointment/appointments",
-   baseUrk : "http://20.204.217.160:8091/appointment/appointments",
+   baseUrl : "http://20.204.217.160:8091/appointment/appointments",
    vetUrl :"http://bt-vet.learn.skillassure.com/vet/vet/viewByVetName",
    clinicUrl : "https://clinicservice.dev.skillassure.com/clinic/clinics/clinic/get/name",
    fetchAllClinics : "https://clinicservice.dev.skillassure.com/clinic/clinics/clinic/get/all",
