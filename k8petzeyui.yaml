@@ -48,3 +48,11 @@ spec:
   - port: 80
   selector:
     app: petzey-ui
+
+#create a sevret for the azure container registryusing the following 
+
+#kubectl create secret docker-registry myregistrykey 
+#    --docker-server=https://myregistry.azurecr.io 
+#    --docker-username=ACR_USERNAME 
+#    --docker-password=ACR_PASSWORD 
+#    --docker-email=ANY_EMAIL_ADDRESS
