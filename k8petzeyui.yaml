@@ -2,8 +2,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    labels:
-        app: petzey-ui
+    #labels:
+    #    app: petzey-ui
     name: petzey-ui
 spec:
   replicas: 1
@@ -15,23 +15,25 @@ spec:
       labels:
         app: petzey-ui
     spec:
-      nodeSelector:
-        "kubernetes.io/os": linux
+     # nodeSelector:
+      #  "kubernetes.io/os": linux
       containers:
       - name: petzey-ui
         image: email14.azurecr.io/prahaskpetzeyprojectui:25
-        env:
-        - name: ALLOW_EMPTY_PASSWORD
-          value: "yes"
-        resources:
-        request:
-          cup: 100m
-          memory: 128Mi
-        limits:
-          cpu: 250m
-          memory:  256Mi
+      #  env:
+       # - name: ALLOW_EMPTY_PASSWORD
+       #   value: "yes"
+       # resources:
+       # request:
+       #   cup: 100m
+       #   memory: 128Mi
+       # limits:
+       #   cpu: 250m
+       #   memory:  256Mi
         ports:
         - containerPort: 80
+        imagePullSecrets:
+        - name: myregistrykey
         #env:
         #- name :
         #  Value: ""
